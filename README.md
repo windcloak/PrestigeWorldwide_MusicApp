@@ -12,3 +12,8 @@ You can make a music room and add Youtube songs to the queue. Other users can jo
 
 # How to Run
 Clone the project and run it on an Android emulator. I use Android Studio's emulator for Nexus 5X. The emulator needs to have the Play Store.
+
+# Preview
+Click for full demo on Youtube
+
+[<img src="https://github.com/windcloak/PrestigeWorldwide_MusicApp/blob/master/demo.gif">](https://www.youtube.com/watch?v=dHicvqFu8UU)
