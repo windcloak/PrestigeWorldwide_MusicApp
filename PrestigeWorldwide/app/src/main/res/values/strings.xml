@@ -1,0 +1,20 @@
+<resources>
+  <string name="app_name">PrestigeWorldwide</string>
+  <string name="button_main_find">find room</string>
+  <string name="button_main_create">create room</string>
+  <string name="room_list_name">Room Lists</string>
+  <string name="create_room_name">Create Room</string>
+  <string name="music_room_name">Music Room</string>
+  <string name="enter_room">Enter Room</string>
+  <string name="name_label_text">Name</string>
+  <string name="enter_name_hint">Room name</string>
+  <string name="genre_label_text">Genre</string>
+  <string name="enter_genre_hint">Music genre</string>
+  <string name="choose_type">Type</string>
+  <string name="public_room">Public</string>
+  <string name="private_room">Private</string>
+  <string name="password_label_text">Password</string>
+  <string name="enter_password_hint">Room password</string>
+    <string name="button_join_room">Join Room</string>
+    <string name="roomname" />
+</resources>

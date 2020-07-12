@@ -1,0 +1,2 @@
+include ':app', ':YouTubeAndroidPlayerApi'
+rootProject.name='PrestigeWorldwide'

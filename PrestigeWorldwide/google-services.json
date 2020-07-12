@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "28514711531",
+    "firebase_url": "https://prestige-worldwide-89c6c.firebaseio.com",
+    "project_id": "prestige-worldwide-89c6c",
+    "storage_bucket": "prestige-worldwide-89c6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28514711531:android:14e5267a284dda44c4cbae",
+        "android_client_info": {
+          "package_name": "com.example.prestigeworldwide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28514711531-k6t9ifok11726dvsptbom7v0cluqenb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoSLfER-7cNkuz0G1Bd6eIVUVTActnNnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28514711531-k6t9ifok11726dvsptbom7v0cluqenb2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateRoomActivity">
+
+  <Button
+      android:id="@+id/button_create_room"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginBottom="16dp"
+      android:onClick="launchMusicRoom"
+      android:text="@string/create_room_name"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+  <TextView
+    android:id="@+id/form_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="28dp"
+    android:text="@string/name_label_text"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+    android:id="@+id/name_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:ems="10"
+    android:hint="@string/enter_name_hint"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toBottomOf="@+id/form_name"
+    app:layout_constraintStart_toEndOf="@+id/form_name"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/genre_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="32dp"
+    android:text="@string/genre_label_text"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/form_name" />
+
+  <EditText
+    android:id="@+id/genre_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="1dp"
+    android:ems="10"
+    android:hint="@string/enter_genre_hint"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toBottomOf="@+id/genre_label"
+    app:layout_constraintStart_toEndOf="@+id/genre_label"
+    app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+  <TextView
+    android:id="@+id/room_type_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="36dp"
+    android:text="@string/choose_type"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/genre_label" />
+
+
+  <TextView
+    android:id="@+id/password_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="32dp"
+    android:text="@string/password_label_text"
+    android:textSize="18sp"
+    android:visibility="invisible"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+  <EditText
+    android:id="@+id/password_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:ems="10"
+    android:hint="@string/enter_password_hint"
+    android:inputType="textPassword"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="@+id/password_label"
+    app:layout_constraintStart_toEndOf="@+id/password_label" />
+
+  <RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toTopOf="@+id/password_text"
+    app:layout_constraintStart_toEndOf="@+id/room_type_label"
+    app:layout_constraintTop_toTopOf="@+id/room_type_label">
+
+
+    <RadioButton
+      android:id="@+id/public_room"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:onClick="onRadioButtonClicked"
+      android:text="@string/public_room"
+      app:layout_constraintStart_toEndOf="@+id/room_type_label"
+      app:layout_constraintTop_toBottomOf="@+id/genre_text" />
+
+    <RadioButton
+      android:id="@+id/private_room"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:onClick="onRadioButtonClicked"
+      android:text="@string/private_room"
+      app:layout_constraintStart_toEndOf="@+id/room_type_label"
+      app:layout_constraintTop_toBottomOf="@+id/public_room" />
+  </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
