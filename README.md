@@ -12,7 +12,7 @@ This is a group project:
 You can make a music room and add Youtube songs to the queue. Other users can join the room and listen to the queue.
 
 # How to Run
-Clone the project and run it on an Android emulator. I use Android Studio's emulator for Nexus 5X. The emulator needs to have the Play Store.
+Clone the project and run it on an Android emulator or real Android device. I use Android Studio's emulator for Nexus 5X. The emulator needs to have the Play Store.
 
 # Preview
 Click for full demo on Youtube
